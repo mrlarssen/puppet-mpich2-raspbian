@@ -16,7 +16,6 @@ node default {
     command => "wget http://www.mcs.anl.gov/research/projects/mpich2/downloads/tarballs/1.4.1p1/mpich2-1.4.1p1.tar.gz -O /home/pi2/mpich2/mpich2-1.4.1p1.tar.gz",
     creates => "/home/pi2/mpich2/mpich2-1.4.1p1.tar.gz",
     path => "/usr/bin/",
-    refreshonly => true,
     before => Exec["unarchive"],
   }
 
